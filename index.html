@@ -12,7 +12,116 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
-      <!-- Student code goes here -->
+      <section class="card" id="html-section"> 
+        <h2>HTML</h2>
+        <ul>
+          <li>The head element contains information about the webpage</li>
+          <li>The head contains meta data tags or elements, such as:</li>
+          <ul>
+            <li>Title</li>
+            <li>Character Set</li>
+            <li>Script</li>
+            <li>Description</li>
+            <li>Keywords</li>
+            <li>Author</li>
+          <li>Viewport</li>
+        </ul>
+        <li>The body element represents the visible content shown to the user</li>
+        <li>The basic framework for an HTML page is structured as such:</li><ol>
+          <li>&lt;!DOCTYPE html&gt;</li>
+          <li>&lt;html&gt;</li>
+          <li>&lt;head&gt;</li>
+          <ul><li>&lt;meta&gt; as many as necessary</li></ul>
+          <li>&lt;body&gt;</li><br>
+        </ol><li>Note: Atributes are always defined in the beginning &lt; &gt; never in the closing &lt; &gt;</li>
+        </ul>
+      </section>
+      <section class="card" id="css-section">
+        <h2>CSS</h2>
+      <ul>
+        <li>Enter your CSS notes here</li>
+      </ul> 
+    </section>
+      <section class="card" id="git-section">
+        <h2>Git</h2>
+      <strong>SetUp &amp; Init</strong><br>
+      Configuring user information, initializing and cloning repositories
+      <ul>
+        <li>git init: initialize an existing directory as a git repository </li>
+        <li>git clone [url]: retrieve an entire repository from a hosted location via URL</li>
+      </ul>
+      <strong>Stage &amp; Snapshot</strong><br>
+      Working with snapshots &amp; the Git staging area
+        <ul>
+          <li>git status: checks what branch we are currently on</li>
+        <li>git add [file]: add a file as it looks now to your next commit (stage)</li>
+        <li>git reset [file]: unstage a file while retaining the changes in working directory</li>
+        <li>git diff: diff of what is changed but not staged</li>
+        <li>git diff --staged: diff of what is staged but not yet committed</li>
+        <li>git commit -m "[descriptive message]": commit your staged content as a new commit snapshot</li>
+      </ul>
+       <strong>Branch &amp; Merge</strong><br>
+       Isolating work in branches, changing context, and integrating changes
+       <ul>
+        <li>git branch: list your branches, an &ast; will appear next to the currently active branch</li>
+        <li>git branch: [branch-name]: Create a new branch at the current commit</li>
+        <li>git checkout: switch to another branch and check it out into your working directory</li>
+        <li>git checkout -b [branch name]: creates a new branch and switches to it</li>
+        <li>git merge [branch]: merge the specified branch's history into the current one</li>
+        <li>git log: show all commits in the current branch's history</li>
+      </ul> 
+      <strong>Inspect &amp; Compare</strong><br>
+      Examining logs, diffs and object information
+      <ul><li>git log: show the commit history for the currently active branch</li>
+      <li>git log branchB..branchA: show the commits on branchA that are not on branchB</li>
+      <li>git log --follow [file]: show the commits that changed file, even across renames</li>
+      <li>git diff branchB...branchA: show the diff of what is in branchA that is not in branchB</li>
+      <li>git show [SHA]: show any object in Git in human-readable format</li>
+    </ul>
+    <strong>Tracking Path Changes</strong><br>
+    Versioning file removes and path changes
+    <ul>
+      <li>git rm [file]: delete the file from project and stage the removal for commit</li>
+      <li>git mv [existing path] [new path]: change an existing file path and stage the move</li>
+      <li>git log --stat -M: show all commit logs with indication of any path that moved</li>
+    </ul>
+<strong>Ignoring Patterns</strong><br>
+Preventing unintentional staging or commiting of files
+<ul><li>Logs/<br>&ast;.notes<br>pattern&ast;/<br>Save a file with desired patterns as .gitignore with either direct string matches or wildcard globs</li>
+<li>git config --global core.excludefile [file]: system wide ignore pattern for all local repositories</li>
+</ul>
+<strong>Share &amp; Update</strong><br>
+Retrieving updates from another repository and updating local repos
+<ul>
+  <li>git remote add [alias] [url]: add a git URL as an alias</li>
+  <li>git fetch [alias]: fetch down all the branches from that Git remote</li>
+  <li>git merge [alias]/[branch]: merge a remote branch into your current branch to bring it up to date</li>
+  <li>git push [alias] [branch]: transmit local branch commits to the remote repository branch</li>
+  <li>git pull: fetch and merge any commits from the tracking remote branch</li>
+</ul>
+<strong>Rewrite History</strong><br>
+Rewriting branches, updating commits and clearing history
+<ul>
+  <li>git rebase [branch]: apply any commits of current branch ahead of specified one</li>
+  <li>git reset --hard [commit]: clear staging area, rewrite working tree from a specified commit</li>
+</ul>
+<strong>Temporary Commits</strong><br>
+Temporarily store modified, tracked files in order to change branches
+<ul>
+  <li>git stash: save modified and staged changes</li>
+  <li>git stash list: list stack-order of stashed file changes</li>
+  <li>git stash pop: write working from top of stash stack</li>
+<li>git stash drop: discard the changes from top of stash stack</li>
+</ul>
+          
+        
+    </section>
+      <section class="card" id="javascript-section">
+        <h2>Javascript</h2> 
+      <ul>
+        <li>Enter your Javascript notes here</li>
+      </ul>
+    </section>
     </main>
 
     <footer>
