@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+      </style>
+      
+      <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -34,24 +39,32 @@
           <ul><li>&lt;meta&gt; as many as necessary</li></ul>
           <li>&lt;body&gt;</li><br>
         </ol><li>Note: Atributes are always defined in the beginning &lt; &gt; never in the closing &lt; &gt;</li>
-        </ul>
+        </ul><br>
       </section>
       <section class="card" id="css-section">
         <h2>CSS</h2>
       <ul>
-        <li>Enter your CSS notes here</li>
-      </ul> 
+        <li>A margin indicates how much space we want around the outside of an element.</li>
+        <li>A padding indicates how much space we want around the content inside an element.</li>
+        <li>There are three ways to style a webpage using CSS: inline, internal, and external.</li>
+        <li>Inline styles apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only.</li>
+        <li>Internal style sheet contains CSS rules for the webpage in the head section of the HTML file.</li>
+        <li>External allows developers to keep all their CSS rules in a separate file, which makes design changes easier.</li>
+        <li>Separation of concerns is a term that refers to separating code into different files based on use.</li>
+        <li>A CSS rule is made up of a "selector" and "declorations" property: value; property: value; etc.</li>
+        <li>Every HTML element is essentially a box, the CSS box model is: content, padding, border and margin.</li>
+      </ul><br> 
     </section>
       <section class="card" id="git-section">
         <h2>Git</h2>
-      <strong>SetUp &amp; Init</strong><br>
-      Configuring user information, initializing and cloning repositories
+      <h3>SET-UP &amp; INIT<br>
+      Configuring user information, initializing and cloning repositories</h3>
       <ul>
         <li>git init: initialize an existing directory as a git repository </li>
         <li>git clone [url]: retrieve an entire repository from a hosted location via URL</li>
-      </ul>
-      <strong>Stage &amp; Snapshot</strong><br>
-      Working with snapshots &amp; the Git staging area
+      </ul><br>
+      <h3>STAGE &amp; SNAPSHOT<br>
+      Working with snapshots &amp; the Git staging area</h3>
         <ul>
           <li>git status: checks what branch we are currently on</li>
         <li>git add [file]: add a file as it looks now to your next commit (stage)</li>
@@ -59,9 +72,9 @@
         <li>git diff: diff of what is changed but not staged</li>
         <li>git diff --staged: diff of what is staged but not yet committed</li>
         <li>git commit -m "[descriptive message]": commit your staged content as a new commit snapshot</li>
-      </ul>
-       <strong>Branch &amp; Merge</strong><br>
-       Isolating work in branches, changing context, and integrating changes
+      </ul><br>
+       <h3>BRANCH &amp; MERGE<br>
+       Isolating work in branches, changing context, and integrating changes</h3>
        <ul>
         <li>git branch: list your branches, an &ast; will appear next to the currently active branch</li>
         <li>git branch: [branch-name]: Create a new branch at the current commit</li>
@@ -69,50 +82,50 @@
         <li>git checkout -b [branch name]: creates a new branch and switches to it</li>
         <li>git merge [branch]: merge the specified branch's history into the current one</li>
         <li>git log: show all commits in the current branch's history</li>
-      </ul> 
-      <strong>Inspect &amp; Compare</strong><br>
-      Examining logs, diffs and object information
+      </ul><br>
+      <h3>INSPECT &amp; COMPARE<br>
+      Examining logs, diffs and object information</h3>
       <ul><li>git log: show the commit history for the currently active branch</li>
       <li>git log branchB..branchA: show the commits on branchA that are not on branchB</li>
       <li>git log --follow [file]: show the commits that changed file, even across renames</li>
       <li>git diff branchB...branchA: show the diff of what is in branchA that is not in branchB</li>
       <li>git show [SHA]: show any object in Git in human-readable format</li>
-    </ul>
-    <strong>Tracking Path Changes</strong><br>
-    Versioning file removes and path changes
+    </ul><br>
+    <h3>TRACKING PATH CHANGES<br>
+    Versioning file removes and path changes</h3>
     <ul>
       <li>git rm [file]: delete the file from project and stage the removal for commit</li>
       <li>git mv [existing path] [new path]: change an existing file path and stage the move</li>
       <li>git log --stat -M: show all commit logs with indication of any path that moved</li>
-    </ul>
-<strong>Ignoring Patterns</strong><br>
-Preventing unintentional staging or commiting of files
+    </ul><br>
+<h3>IGNORING PATTERNS<br>
+Preventing unintentional staging or commiting of files</h3>
 <ul><li>Logs/<br>&ast;.notes<br>pattern&ast;/<br>Save a file with desired patterns as .gitignore with either direct string matches or wildcard globs</li>
 <li>git config --global core.excludefile [file]: system wide ignore pattern for all local repositories</li>
-</ul>
-<strong>Share &amp; Update</strong><br>
-Retrieving updates from another repository and updating local repos
+</ul><br>
+<h3>SHARE &amp; UPDATE<br>
+Retrieving updates from another repository and updating local repos</h3>
 <ul>
   <li>git remote add [alias] [url]: add a git URL as an alias</li>
   <li>git fetch [alias]: fetch down all the branches from that Git remote</li>
   <li>git merge [alias]/[branch]: merge a remote branch into your current branch to bring it up to date</li>
   <li>git push [alias] [branch]: transmit local branch commits to the remote repository branch</li>
   <li>git pull: fetch and merge any commits from the tracking remote branch</li>
-</ul>
-<strong>Rewrite History</strong><br>
-Rewriting branches, updating commits and clearing history
+</ul><br>
+<h3>REWRITE HISTORY<br>
+Rewriting branches, updating commits and clearing history</h3>
 <ul>
   <li>git rebase [branch]: apply any commits of current branch ahead of specified one</li>
   <li>git reset --hard [commit]: clear staging area, rewrite working tree from a specified commit</li>
-</ul>
-<strong>Temporary Commits</strong><br>
-Temporarily store modified, tracked files in order to change branches
+</ul><br>
+<h3>TEMPORARY COMMITS<br>
+Temporarily store modified, tracked files in order to change branches</h3>
 <ul>
   <li>git stash: save modified and staged changes</li>
   <li>git stash list: list stack-order of stashed file changes</li>
   <li>git stash pop: write working from top of stash stack</li>
 <li>git stash drop: discard the changes from top of stash stack</li>
-</ul>
+</ul><br>
           
         
     </section>
@@ -120,7 +133,7 @@ Temporarily store modified, tracked files in order to change branches
         <h2>Javascript</h2> 
       <ul>
         <li>Enter your Javascript notes here</li>
-      </ul>
+      </ul><br>
     </section>
     </main>
 
